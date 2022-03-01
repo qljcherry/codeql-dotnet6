@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/dotnet/sdk:3.1
 
-RUN curl -sLk https://github.com/github/codeql-action/releases/download/codeql-bundle-20211025/codeql-bundle-linux64.tar.gz -o /tmp/codeql-bundle-linux64.tar.gz && \
+RUN curl -sLk https://github.com/github/codeql-action/releases/latest/download/codeql-bundle-linux64.tar.gz -o /tmp/codeql-bundle-linux64.tar.gz && \
     mkdir -p /codeql && \
     mkdir -p /codeqlanalysis && \
     tar -xvzf /tmp/codeql-bundle-linux64.tar.gz -C /codeql && \
